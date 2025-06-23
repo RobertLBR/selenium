@@ -1,0 +1,5 @@
+处理爬取请求时出错: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+爬虫系统设置失败: __init__() got an unexpected keyword argument 'desired_capabilities'
+爬虫系统设置失败: __init__() got an unexpected keyword argument 'desired_capabilities'
+任务执行失败: __init__() got an unexpected keyword argument 'desired_capabilities'
+任务执行失败: __init__() got an unexpected keyword argument 'desired_capabilities'

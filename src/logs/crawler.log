@@ -1,0 +1,20 @@
+2025-06-23 09:10:59,386 - __main__ - INFO - API·şÎñÆ÷ÕıÔÚÆô¶¯£¬¼àÌı 0.0.0.0:5000
+2025-06-23 09:10:59,399 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.16.100.56:5000
+2025-06-23 09:10:59,400 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-06-23 09:11:38,314 - werkzeug - INFO - 172.16.100.56 - - [23/Jun/2025 09:11:38] "[33mGET / HTTP/1.1[0m" 404 -
+2025-06-23 09:11:39,090 - werkzeug - INFO - 172.16.100.56 - - [23/Jun/2025 09:11:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-23 09:12:19,868 - __main__ - ERROR - ´¦ÀíÅÀÈ¡ÇëÇóÊ±³ö´í: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+2025-06-23 09:12:19,869 - werkzeug - INFO - 172.16.101.252 - - [23/Jun/2025 09:12:19] "[35m[1mPOST /api/crawl HTTP/1.1[0m" 500 -
+2025-06-23 09:14:24,566 - werkzeug - INFO - 172.16.101.252 - - [23/Jun/2025 09:14:24] "POST /api/crawl HTTP/1.1" 200 -
+2025-06-23 09:14:24,568 - data_processor - INFO - Êı¾İ´¦ÀíÆ÷³õÊ¼»¯£¬Êä³öÄ¿Â¼: ./output
+2025-06-23 09:14:24,568 - main - INFO - ÅÀ³æÏµÍ³³õÊ¼»¯Íê³É
+2025-06-23 09:14:24,569 - driver_manager - INFO - ³õÊ¼»¯DriverManager: chrome headless mode
+2025-06-23 09:14:24,569 - driver_manager - INFO - ÕıÔÚÁ¬½ÓÔ¶³ÌWebDriver·şÎñ: http://172.16.101.252:4444/wd/hub
+2025-06-23 09:14:24,569 - main - ERROR - ÅÀ³æÏµÍ³ÉèÖÃÊ§°Ü: __init__() got an unexpected keyword argument 'desired_capabilities'
+2025-06-23 09:14:24,569 - main - INFO - ÅÀ³æÏµÍ³×ÊÔ´ÒÑÇåÀí
+2025-06-23 09:14:24,569 - __main__ - ERROR - ÈÎÎñÖ´ĞĞÊ§°Ü: __init__() got an unexpected keyword argument 'desired_capabilities'
+2025-06-23 09:14:24,570 - main - INFO - ÅÀ³æÏµÍ³×ÊÔ´ÒÑÇåÀí
+2025-06-23 09:15:07,725 - werkzeug - INFO - 172.16.101.252 - - [23/Jun/2025 09:15:07] "GET /api/tasks/1 HTTP/1.1" 200 -
