@@ -6,7 +6,7 @@
 
 import sys
 import argparse
-from src.main import main
+from src.main import WebCrawler
 from src.api_server import start_api_server
 
 def parse_args() -> argparse.Namespace:
@@ -60,6 +60,37 @@ def parse_args() -> argparse.Namespace:
     
     return parser.parse_args()
 
+def run_cli_mode(args):
+    """运行命令行模式"""
+    try:
+        # 创建爬虫实例
+        crawler = WebCrawler()
+        
+        # 设置爬虫
+        crawler.setup(
+            browser_type=args.browser,
+            headless=not args.no_headless
+        )
+        
+        try:
+            # 执行爬取
+            crawler.crawl_urls(
+                args.urls,
+                handle_pagination=not args.no_pagination
+            )
+        finally:
+            # 清理资源
+            crawler.cleanup()
+        
+        sys.exit(0)
+        
+    except Exception as e:
+        print(f"爬虫错误: {str(e)}")
+        sys.exit(1)
+    except KeyboardInterrupt:
+        print("用户中断执行")
+        sys.exit(2)
+
 if __name__ == "__main__":
     args = parse_args()
     
@@ -70,6 +101,9 @@ if __name__ == "__main__":
             port=args.port,
             debug=args.debug
         )
-    else:
+    elif args.mode == "cli":
         # 命令行模式
-        main()
+        run_cli_mode(args)
+    else:
+        print("请指定运行模式: cli 或 api")
+        sys.exit(1)

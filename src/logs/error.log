@@ -3,3 +3,1353 @@
 ����ϵͳ����ʧ��: __init__() got an unexpected keyword argument 'desired_capabilities'
 ����ִ��ʧ��: __init__() got an unexpected keyword argument 'desired_capabilities'
 ����ִ��ʧ��: __init__() got an unexpected keyword argument 'desired_capabilities'
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+Function scrape_page failed after 3 retries. Last error: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+Function scrape_page failed after 3 retries. Last error: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+处理分页时出错: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+处理分页时出错: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55bc0f9fed0a <unknown>
+#1 0x55bc0f4af5f0 <unknown>
+#2 0x55bc0f4b6216 <unknown>
+#3 0x55bc0f4b8a88 <unknown>
+#4 0x55bc0f4b8b13 <unknown>
+#5 0x55bc0f500465 <unknown>
+#6 0x55bc0f500c21 <unknown>
+#7 0x55bc0f54f2b1 <unknown>
+#8 0x55bc0f52668d <unknown>
+#9 0x55bc0f54c660 <unknown>
+#10 0x55bc0f526433 <unknown>
+#11 0x55bc0f4f2ea3 <unknown>
+#12 0x55bc0f4f3b01 <unknown>
+#13 0x55bc0f9c3b5b <unknown>
+#14 0x55bc0f9c7a41 <unknown>
+#15 0x55bc0f9aac52 <unknown>
+#16 0x55bc0f9c85b4 <unknown>
+#17 0x55bc0f98ef0f <unknown>
+#18 0x55bc0f9ecdb8 <unknown>
+#19 0x55bc0f9ecf96 <unknown>
+#20 0x55bc0f9fdb56 <unknown>
+#21 0x7fd9870c8aa4 <unknown>
+#22 0x7fd987155a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+爬取页面失败: https://www.163.com/tech/article/K2NOJDDM00097U7T.html, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+Function scrape_page failed after 3 retries. Last error: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+Function scrape_page failed after 3 retries. Last error: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+Function scrape_page failed after 3 retries. Last error: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+处理分页时出错: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+处理分页时出错: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+
+处理分页时出错: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55767edffd0a <unknown>
+#1 0x55767e8b05f0 <unknown>
+#2 0x55767e8b7216 <unknown>
+#3 0x55767e8b9a88 <unknown>
+#4 0x55767e8b9b13 <unknown>
+#5 0x55767e901465 <unknown>
+#6 0x55767e901c21 <unknown>
+#7 0x55767e9502b1 <unknown>
+#8 0x55767e92768d <unknown>
+#9 0x55767e94d660 <unknown>
+#10 0x55767e927433 <unknown>
+#11 0x55767e8f3ea3 <unknown>
+#12 0x55767e8f4b01 <unknown>
+#13 0x55767edc4b5b <unknown>
+#14 0x55767edc8a41 <unknown>
+#15 0x55767edabc52 <unknown>
+#16 0x55767edc95b4 <unknown>
+#17 0x55767ed8ff0f <unknown>
+#18 0x55767ededdb8 <unknown>
+#19 0x55767ededf96 <unknown>
+#20 0x55767edfeb56 <unknown>
+#21 0x7fefe4326aa4 <unknown>
+#22 0x7fefe43b3a34 __clone
+

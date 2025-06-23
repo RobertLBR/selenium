@@ -61,6 +61,8 @@ class DriverManager:
             options.add_argument("--log-level=3")
             options.add_argument("--silent")
             options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")
+            # 为Chrome设置页面加载策略
+            options.page_load_strategy = 'eager'
             return options
         elif self.browser_type == "firefox":
             options = FirefoxOptions()
@@ -68,6 +70,8 @@ class DriverManager:
                 options.add_argument("--headless")
             options.add_argument("--width=1920")
             options.add_argument("--height=1080")
+            # 为Firefox设置页面加载策略
+            options.set_preference('pageLoadStrategy', 'eager')
             return options
         else:
             raise WebDriverError(f"不支持的浏览器类型: {self.browser_type}")
@@ -87,20 +91,10 @@ class DriverManager:
             logger.info(f"正在连接远程WebDriver服务: {self.remote_url}")
             
             options = self._get_browser_options()
-            capabilities = {}
-            
-            if self.browser_type == "chrome":
-                capabilities = webdriver.DesiredCapabilities.CHROME.copy()
-            elif self.browser_type == "firefox":
-                capabilities = webdriver.DesiredCapabilities.FIREFOX.copy()
-            
-            # 设置页面加载策略为eager，加快加载速度
-            capabilities["pageLoadStrategy"] = "eager"
             
             self.driver = webdriver.Remote(
                 command_executor=self.remote_url,
-                options=options,
-                desired_capabilities=capabilities
+                options=options
             )
             
             # 设置超时时间
