@@ -420,3 +420,15 @@ Stacktrace:
 2025-06-24 10:26:55,996 - __main__ - INFO - 批量爬取完成: 总计 1 个URL, 成功 1, 失败 0, 总耗时: 00:04:59
 2025-06-24 10:26:55,997 - driver_manager - INFO - 正在关闭WebDriver
 2025-06-24 10:26:56,077 - __main__ - INFO - 爬虫系统资源已清理
+2025-06-24 10:30:39,934 - data_processor - INFO - 数据处理器初始化，输出目录: ./output
+2025-06-24 10:30:39,934 - __main__ - INFO - 爬虫系统初始化完成
+2025-06-24 10:30:39,934 - driver_manager - INFO - 初始化DriverManager: chrome headless mode
+2025-06-24 10:30:39,935 - driver_manager - INFO - 正在连接远程WebDriver服务: http://172.16.101.252:4444/wd/hub
+2025-06-24 10:30:40,164 - driver_manager - INFO - WebDriver创建成功: chrome
+2025-06-24 10:30:40,165 - __main__ - INFO - 爬虫系统设置完成
+2025-06-24 10:30:40,165 - __main__ - INFO - 开始批量爬取 1 个URL
+2025-06-24 10:30:40,165 - __main__ - INFO - 正在处理 [1/1] https://baike.baidu.com/item/%E4%B8%B0%E7%94%B0%E6%B1%BD%E8%BD%A6%E5%85%AC%E5%8F%B8/1955041
+2025-06-24 10:30:40,166 - __main__ - INFO - 开始爬取URL: https://baike.baidu.com/item/%E4%B8%B0%E7%94%B0%E6%B1%BD%E8%BD%A6%E5%85%AC%E5%8F%B8/1955041
+2025-06-24 10:30:40,166 - page_scraper - INFO - 开始爬取页面: https://baike.baidu.com/item/%E4%B8%B0%E7%94%B0%E6%B1%BD%E8%BD%A6%E5%85%AC%E5%8F%B8/1955041
+2025-06-24 10:34:35,436 - page_scraper - INFO - 页面爬取成功: https://baike.baidu.com/item/%E4%B8%B0%E7%94%B0%E6%B1%BD%E8%BD%A6%E5%85%AC%E5%8F%B8/1955041
+2025-06-24 10:34:35,437 - page_scraper - INFO - 已完成第 1 页的爬取
