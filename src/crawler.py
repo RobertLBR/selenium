@@ -6,8 +6,8 @@
 
 import sys
 import argparse
-from src.main import WebCrawler
-from src.api_server import start_api_server
+from main import WebCrawler
+from api_server import start_api_server
 
 def parse_args() -> argparse.Namespace:
     """解析命令行参数"""

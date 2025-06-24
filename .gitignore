@@ -1,1 +1,7 @@
-venv
+.idea
+output
+logs
+src/output
+src/__pycache__
+src/logs
+

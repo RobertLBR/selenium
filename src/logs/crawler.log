@@ -754,3 +754,11 @@ Stacktrace:
 2025-06-23 10:33:56,020 - driver_manager - INFO - 正在关闭WebDriver
 2025-06-23 10:33:56,104 - main - INFO - 爬虫系统资源已清理
 2025-06-23 10:33:56,104 - werkzeug - INFO - 127.0.0.1 - - [23/Jun/2025 10:33:56] "[33mPOST /api/extract HTTP/1.1[0m" 404 -
+2025-06-24 11:05:42,340 - api_server - INFO - API服务器正在启动，监听 0.0.0.0:5008
+2025-06-24 11:05:45,397 - api_server - INFO - API服务器正在启动，监听 0.0.0.0:5009
+2025-06-24 11:05:49,421 - api_server - INFO - API服务器正在启动，监听 0.0.0.0:5010
+2025-06-24 11:05:49,426 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5010
+ * Running on http://172.16.101.252:5010
+2025-06-24 11:05:49,426 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
