@@ -4,6 +4,7 @@ WebDriver管理模块
 """
 
 import time
+import random
 from typing import Optional, Dict, Any
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
@@ -47,11 +48,15 @@ class DriverManager:
         if self.browser_type == "chrome":
             options = ChromeOptions()
             if self.headless:
-                options.add_argument("--headless")
+                options.add_argument("--headless=new")  # 使用新的无头模式
+            
+            # 基本设置
             options.add_argument("--disable-gpu")
             options.add_argument("--no-sandbox")
             options.add_argument("--disable-dev-shm-usage")
             options.add_argument("--window-size=1920,1080")
+            
+            # 性能优化
             options.add_argument("--disable-extensions")
             options.add_argument("--disable-popup-blocking")
             options.add_argument("--disable-infobars")
@@ -60,7 +65,47 @@ class DriverManager:
             options.add_argument("--disable-logging")
             options.add_argument("--log-level=3")
             options.add_argument("--silent")
-            options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")
+            
+            # 内存优化
+            options.add_argument("--disable-dev-tools")
+            options.add_argument("--disable-software-rasterizer")
+            options.add_argument("--disable-background-networking")
+            options.add_argument("--disable-background-timer-throttling")
+            options.add_argument("--disable-backgrounding-occluded-windows")
+            options.add_argument("--disable-breakpad")
+            options.add_argument("--disable-component-extensions-with-background-pages")
+            options.add_argument("--disable-features=TranslateUI")
+            options.add_argument("--disable-ipc-flooding-protection")
+            
+            # 网络优化
+            options.add_argument("--disable-client-side-phishing-detection")
+            options.add_argument("--disable-default-apps")
+            options.add_argument("--disable-hang-monitor")
+            options.add_argument("--disable-prompt-on-repost")
+            options.add_argument("--disable-sync")
+            options.add_argument("--disable-web-resources")
+            options.add_argument("--metrics-recording-only")
+            options.add_argument("--no-first-run")
+            options.add_argument("--safebrowsing-disable-auto-update")
+            
+            # 随机User-Agent
+            user_agents = [
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36",
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36",
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36",
+            ]
+            options.add_argument(f"--user-agent={random.choice(user_agents)}")
+            
+            # 设置页面加载策略为normal，以确保页面完全加载
+            options.page_load_strategy = 'normal'
+            
+            # 启用Blink功能
+            options.add_argument("--enable-features=NetworkService,NetworkServiceInProcess")
+            
+            # 添加实验性选项
+            options.add_experimental_option("excludeSwitches", ["enable-automation"])
+            options.add_experimental_option('useAutomationExtension', False)
+            
             return options
         elif self.browser_type == "firefox":
             options = FirefoxOptions()
@@ -68,6 +113,8 @@ class DriverManager:
                 options.add_argument("--headless")
             options.add_argument("--width=1920")
             options.add_argument("--height=1080")
+            # 为Firefox设置页面加载策略
+            options.set_preference('pageLoadStrategy', 'eager')
             return options
         else:
             raise WebDriverError(f"不支持的浏览器类型: {self.browser_type}")
@@ -87,20 +134,10 @@ class DriverManager:
             logger.info(f"正在连接远程WebDriver服务: {self.remote_url}")
             
             options = self._get_browser_options()
-            capabilities = {}
-            
-            if self.browser_type == "chrome":
-                capabilities = webdriver.DesiredCapabilities.CHROME.copy()
-            elif self.browser_type == "firefox":
-                capabilities = webdriver.DesiredCapabilities.FIREFOX.copy()
-            
-            # 设置页面加载策略为eager，加快加载速度
-            capabilities["pageLoadStrategy"] = "eager"
             
             self.driver = webdriver.Remote(
                 command_executor=self.remote_url,
-                options=options,
-                desired_capabilities=capabilities
+                options=options
             )
             
             # 设置超时时间

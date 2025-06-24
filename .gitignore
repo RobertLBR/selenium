@@ -1,1 +1,6 @@
 venv
+.idea
+output
+src/output
+src/__pycache__
+src/logs

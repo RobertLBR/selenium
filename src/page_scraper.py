@@ -5,6 +5,8 @@
 
 import time
 import random
+import re
+import html
 from typing import List, Dict, Optional, Generator, Any
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.common.by import By
@@ -81,8 +83,36 @@ class PageScraper:
         Returns:
             str: 清理后的文本
         """
+        if not text:
+            return ""
+            
+        # 解码HTML实体
+        text = html.unescape(text)
+        
         # 移除多余的空白字符
         text = ' '.join(text.split())
+        
+        # 移除特殊字符和控制字符
+        text = re.sub(r'[\x00-\x1F\x7F-\x9F]', '', text)
+        
+        # 替换URL为标记
+        text = re.sub(r'https?://\S+|www\.\S+', '[URL]', text)
+        
+        # 替换邮箱地址为标记
+        text = re.sub(r'\S+@\S+\.\S+', '[EMAIL]', text)
+        
+        # 移除连续的标点符号
+        text = re.sub(r'([.!?])\1+', r'\1', text)
+        
+        # 移除JavaScript代码片段
+        text = re.sub(r'<script.*?>.*?</script>', '', text, flags=re.DOTALL)
+        
+        # 移除CSS代码片段
+        text = re.sub(r'<style.*?>.*?</style>', '', text, flags=re.DOTALL)
+        
+        # 移除HTML标签
+        text = re.sub(r'<[^>]+>', '', text)
+        
         return text.strip()
     
     def _extract_page_content(self) -> Dict[str, Any]:
@@ -113,11 +143,11 @@ class PageScraper:
             # 获取所有可见文本元素
             text_elements = self.driver.find_elements(
                 By.XPATH,
-                "//*[not(self::script or self::style)]/text()[normalize-space()]"
+                "//*[not(self::script or self::style) and not(self::meta) and not(self::link) and string-length(normalize-space(text())) > 0]"
             )
             
             # 提取并清理文本
-            texts = [self._clean_text(elem.text) for elem in text_elements if elem.text.strip()]
+            texts = [self._clean_text(elem.text) for elem in text_elements if elem.text and elem.text.strip()]
             
             # 获取所有链接
             links = [
@@ -126,18 +156,165 @@ class PageScraper:
                 if elem.get_attribute('href')
             ]
             
+            # 提取元数据
+            metadata = self._extract_metadata()
+            
+            # 检测内容类型
+            content_type = self._detect_content_type(texts)
+            
+            # 提取结构化数据
+            structured_data = self._extract_structured_data()
+            
             return {
                 "title": title,
                 "url": url,
                 "body_text": self._clean_text(body_text),
                 "text_elements": texts,
                 "links": links,
+                "metadata": metadata,
+                "content_type": content_type,
+                "structured_data": structured_data,
                 "timestamp": time.time()
             }
             
         except Exception as e:
             logger.error(f"提取页面内容时出错: {str(e)}")
             raise PageLoadError(f"无法提取页面内容: {str(e)}")
+            
+    def _extract_metadata(self) -> Dict[str, Any]:
+        """
+        提取页面元数据
+        
+        Returns:
+            Dict[str, Any]: 元数据字典
+        """
+        metadata = {}
+        
+        try:
+            # 提取meta标签
+            meta_tags = {
+                "description": "name",
+                "keywords": "name",
+                "author": "name",
+                "viewport": "name",
+                "robots": "name",
+                "generator": "name",
+                "application-name": "name",
+                "og:title": "property",
+                "og:description": "property",
+                "og:image": "property",
+                "og:url": "property",
+                "og:type": "property",
+                "og:site_name": "property",
+                "twitter:card": "name",
+                "twitter:site": "name",
+                "twitter:title": "name",
+                "twitter:description": "name",
+                "twitter:image": "name"
+            }
+            
+            for tag, attr_type in meta_tags.items():
+                try:
+                    element = self.driver.find_element(By.XPATH, f"//meta[@{attr_type}='{tag}']")
+                    metadata[tag] = element.get_attribute("content")
+                except NoSuchElementException:
+                    pass
+                    
+            # 提取canonical链接
+            try:
+                canonical = self.driver.find_element(By.XPATH, "//link[@rel='canonical']")
+                metadata["canonical"] = canonical.get_attribute("href")
+            except NoSuchElementException:
+                pass
+                
+            # 提取favicon
+            try:
+                favicon = self.driver.find_element(By.XPATH, "//link[contains(@rel, 'icon')]")
+                metadata["favicon"] = favicon.get_attribute("href")
+            except NoSuchElementException:
+                pass
+                
+            # 提取语言
+            try:
+                html_tag = self.driver.find_element(By.TAG_NAME, "html")
+                metadata["language"] = html_tag.get_attribute("lang")
+            except NoSuchElementException:
+                pass
+                
+        except Exception as e:
+            logger.warning(f"提取元数据时出错: {str(e)}")
+            
+        return metadata
+        
+    def _detect_content_type(self, texts: List[str]) -> str:
+        """
+        检测页面内容类型
+        
+        Args:
+            texts: 页面文本元素列表
+            
+        Returns:
+            str: 内容类型
+        """
+        # 简单的内容类型检测逻辑
+        if not texts:
+            return "unknown"
+            
+        # 检查是否为文章页面
+        article_indicators = ["article", "post", "blog", "news"]
+        for indicator in article_indicators:
+            if indicator in self.driver.current_url.lower():
+                return "article"
+                
+        # 检查是否为产品页面
+        product_indicators = ["product", "item", "shop", "store", "buy", "price"]
+        for indicator in product_indicators:
+            if indicator in self.driver.current_url.lower():
+                return "product"
+                
+        # 检查是否为列表页面
+        if len(self.driver.find_elements(By.XPATH, "//ul/li")) > 10:
+            return "list"
+            
+        # 检查是否为表单页面
+        if len(self.driver.find_elements(By.TAG_NAME, "form")) > 0:
+            return "form"
+            
+        # 默认为一般页面
+        return "general"
+        
+    def _extract_structured_data(self) -> List[Dict[str, Any]]:
+        """
+        提取页面中的结构化数据
+        
+        Returns:
+            List[Dict[str, Any]]: 结构化数据列表
+        """
+        structured_data = []
+        
+        try:
+            # 提取JSON-LD结构化数据
+            json_ld_scripts = self.driver.find_elements(
+                By.XPATH,
+                "//script[@type='application/ld+json']"
+            )
+            
+            for script in json_ld_scripts:
+                try:
+                    script_content = script.get_attribute("innerHTML")
+                    if script_content:
+                        # 注意：这里我们只返回原始JSON字符串，实际使用时可以解析为Python对象
+                        structured_data.append({
+                            "type": "json-ld",
+                            "content": script_content
+                        })
+                except Exception as e:
+                    logger.debug(f"提取JSON-LD数据时出错: {str(e)}")
+                    
+        except Exception as e:
+            logger.warning(f"提取结构化数据时出错: {str(e)}")
+            
+        return structured_data
     
     def _find_next_page_link(self) -> Optional[str]:
         """

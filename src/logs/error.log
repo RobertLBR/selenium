@@ -3,3 +3,274 @@
 爬虫系统设置失败: __init__() got an unexpected keyword argument 'desired_capabilities'
 任务执行失败: __init__() got an unexpected keyword argument 'desired_capabilities'
 任务执行失败: __init__() got an unexpected keyword argument 'desired_capabilities'
+无效的URL: www.baidu.com
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+爬取页面失败: https://www.baidu.com, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+爬取页面失败: https://www.baidu.com, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+爬取页面失败: https://www.baidu.com, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+提取页面内容时出错: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+爬取页面失败: https://www.baidu.com, 错误: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+Function scrape_page failed after 3 retries. Last error: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
+处理分页时出错: 爬取页面失败: 无法提取页面内容: Message: invalid selector: The result of the xpath expression "//*[not(self::script or self::style)]/text()[normalize-space()]" is: [object Text]. It should be an element.
+  (Session info: chrome=135.0.7049.84); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+#0 0x55e3885b3d0a <unknown>
+#1 0x55e3880645f0 <unknown>
+#2 0x55e38806b216 <unknown>
+#3 0x55e38806da88 <unknown>
+#4 0x55e38806db13 <unknown>
+#5 0x55e3880b5465 <unknown>
+#6 0x55e3880b5c21 <unknown>
+#7 0x55e3881042b1 <unknown>
+#8 0x55e3880db68d <unknown>
+#9 0x55e388101660 <unknown>
+#10 0x55e3880db433 <unknown>
+#11 0x55e3880a7ea3 <unknown>
+#12 0x55e3880a8b01 <unknown>
+#13 0x55e388578b5b <unknown>
+#14 0x55e38857ca41 <unknown>
+#15 0x55e38855fc52 <unknown>
+#16 0x55e38857d5b4 <unknown>
+#17 0x55e388543f0f <unknown>
+#18 0x55e3885a1db8 <unknown>
+#19 0x55e3885a1f96 <unknown>
+#20 0x55e3885b2b56 <unknown>
+#21 0x7f29b1720aa4 <unknown>
+#22 0x7f29b17ada34 __clone
+
