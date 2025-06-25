@@ -1,3 +1,20 @@
-beautifulsoup4>=4.9.0
-requests>=2.25.0
-importlib-metadata>=1.0.0
+# Web驱动和自动化
+selenium>=4.10.0
+
+# Web框架
+flask>=2.0.0
+flask-cors>=3.0.10
+
+# 工具库
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+lxml>=4.9.0
+
+# 类型提示
+typing-extensions>=4.0.0
+
+# 日志和调试
+colorlog>=6.7.0
+
+# 命令行工具
+click>=8.0.0

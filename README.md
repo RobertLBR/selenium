@@ -1,192 +1,151 @@
-<<<<<<< HEAD
-# 网络爬虫插件系统
+# Selenium Web Crawler
 
-一个基于三层架构的灵活爬虫插件系统。
+一个基于 Selenium 的网页内容爬取系统，支持命令行模式和 API 服务器模式。该系统提供了灵活的配置选项和强大的内容提取功能，可用于网页数据采集、内容分析等场景。
 
-## 项目功能
+## 功能特点
 
-- **模块化设计**：输入层、解析层和接口层分离
-- **易于扩展**：可轻松添加针对不同网站的新插件
-- **类型提示**：完整的Python类型提示支持
-- **标准化接口**：所有插件遵循相同的接口规范
+- 支持 Chrome 和 Firefox 浏览器
+- 支持无头模式和有界面模式
+- 提供命令行接口和 RESTful API 接口
+- 可提取网页 HTML 内容和文本内容
+- 支持批量爬取多个 URL
+- 可配置的超时和重试机制
+- 支持分页内容处理
+- 智能等待页面加载
+- 灵活的内容选择器配置
+- 完善的错误处理机制
+- 详细的日志记录
 
-## 目录结构
+## 项目结构
 
 ```
-web-crawler-plugins/
-├── README.md          # 项目说明文档
-├── setup.cfg          # 插件注册配置文件
-├── src/               # 源代码目录
-│   ├── plugin_base.py # 插件基础接口
-│   └── plugins/       # 插件实现
-│       ├── input/     # 输入层插件
-│       │   └── ajax_plugin.py
-│       ├── parse/     # 解析层插件
-│       │   └── news_parser.py
-│       └── api/       # 接口层插件
-│           └── api_adapter.py
-└── test.py            # 测试文件
+selenium-web-crawler/
+├── src/                    # 源代码目录
+│   ├── __init__.py
+│   ├── main.py            # 主入口文件
+│   ├── crawler.py         # 爬虫核心实现
+│   ├── api_server.py      # API服务器实现
+│   └── config.py          # 配置文件
+├── tests/                  # 测试目录
+│   ├── __init__.py
+│   ├── test_crawler.py    # 爬虫测试
+│   └── test_api_server.py # API服务器测试
+├── examples/              # 示例目录
+│   └── basic_usage.py    # 基本使用示例
+├── requirements.txt       # 项目依赖
+├── README.md             # 项目文档
+├── LICENSE               # MIT许可证
+└── .gitignore           # Git忽略配置
 ```
 
-## 运行方式
+## 安装
+
+### 前提条件
+
+- Python 3.6+
+- Chrome 或 Firefox 浏览器
+- 对应的 WebDriver（ChromeDriver 或 GeckoDriver）
 
 ### 安装步骤
 
 1. 克隆仓库
+
 ```bash
-git clone https://github.com/your-repo/web-crawler-plugins.git
-cd web-crawler-plugins
+git clone https://github.com/yourusername/selenium-web-crawler.git
+cd selenium-web-crawler
 ```
 
 2. 安装依赖
+
 ```bash
-pip install -e .
+pip install -r requirements.txt
 ```
 
-### 使用示例
+3. 安装 WebDriver
 
-```python
-from src.plugin_base import PluginBase
-from src.plugins.input.ajax_plugin import AjaxPlugin
-from src.plugins.parse.news_parser import NewsParser
+对于 Chrome：
+- 下载与你的 Chrome 版本匹配的 [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+- 将 ChromeDriver 添加到系统 PATH 中
 
-# 初始化插件
-input_plugin = AjaxPlugin()
-parse_plugin = NewsParser()
-
-# 处理请求
-if input_plugin.can_handle(url):
-    request = input_plugin.process_request({})
-    
-# 解析内容
-if parse_plugin.can_handle(url):
-    result = parse_plugin.parse(html_content)
-```
-
-### 内置插件列表
-
-| 插件类型 | 类名            | 功能描述               |
-|----------|-----------------|-----------------------|
-| 输入层   | AjaxPlugin      | 处理AJAX请求          |
-| 解析层   | NewsParser      | 解析新闻文章内容       |
-| 接口层   | ApiAdapterPlugin| 适配外部API调用       |
-
-## 开发新插件
-
-1. 实现插件基类
-```python
-from src.plugin_base import PluginBase
-
-class MyPlugin:
-    def can_handle(self, url: str) -> bool:
-        """判断是否适用当前URL"""
-        pass
-    
-    def process_request(self, request: Dict) -> Dict:
-        """处理请求(输入层插件)"""
-        pass
-```
-
-2. 注册插件
-在setup.cfg中添加：
-```ini
-[options.entry_points]
-web_crawler.input_plugins =
-    my_plugin = src.plugins.input.my_plugin:MyPlugin
-```
-
-## 贡献指南
-
-1. Fork本仓库
-2. 创建您的特性分支
-3. 提交您的修改
-4. 推送分支
-5. 创建Pull Request
-=======
-# 网页内容爬取系统
-
-基于Selenium和远程WebDriver的网页内容爬取工具，支持自动处理分页、数据清洗和多种格式输出。提供命令行和API接口两种使用方式。
-
-## 功能特点
-
-- 连接远程WebDriver服务
-- 自动爬取页面的完整文本内容
-- 智能处理分页内容
-- 数据清洗和格式化
-- 支持多种输出格式（TXT、JSON）
-- 完善的异常处理和日志记录
-- 提供RESTful API接口
+对于 Firefox：
+- 下载 [GeckoDriver](https://github.com/mozilla/geckodriver/releases)
+- 将 GeckoDriver 添加到系统 PATH 中
 
 ## 使用方法
 
-系统提供两种使用模式：命令行模式和API服务器模式。
-
 ### 命令行模式
 
-#### 基本用法
+爬取单个 URL：
 
 ```bash
-python crawler.py cli https://example.com
+python src/main.py cli https://example.com
 ```
 
-#### 指定浏览器
+指定浏览器类型：
 
 ```bash
-python crawler.py cli https://example.com --browser firefox
+python src/main.py cli https://example.com --browser firefox
 ```
 
-支持的浏览器：`chrome`（默认）、`firefox`
-
-#### 显示浏览器界面（非无头模式）
+使用有界面模式（非无头模式）：
 
 ```bash
-python crawler.py cli https://example.com --no-headless
+python src/main.py cli https://example.com --no-headless
 ```
 
-#### 不处理分页
+将结果保存到文件：
 
 ```bash
-python crawler.py cli https://example.com --no-pagination
+python src/main.py cli https://example.com --output result.txt
 ```
 
-#### 批量爬取多个URL
+### API 服务器模式
+
+启动 API 服务器：
 
 ```bash
-python crawler.py cli https://example.com https://another-example.com
+python src/main.py server
 ```
 
-### API服务器模式
-
-#### 启动API服务器
+指定主机和端口：
 
 ```bash
-python crawler.py api
+python src/main.py server --host 127.0.0.1 --port 8080
 ```
 
-默认情况下，API服务器会在0.0.0.0:5000上启动。
-
-#### 自定义主机和端口
+启用调试模式：
 
 ```bash
-python crawler.py api --host 127.0.0.1 --port 8080
+python src/main.py server --debug
 ```
 
-#### 启用调试模式
+## API 文档
 
-```bash
-python crawler.py api --debug
+### 获取 API 状态
+
+```
+GET /api/status
 ```
 
-#### API接口使用
+响应示例：
 
-##### 提取网页内容
+```json
+{
+  "status": "running",
+  "active_crawlers": 0,
+  "uptime": 123.45
+}
+```
 
-**请求:**
+### 提取 URL 内容
 
 ```
 POST /api/extract
-Content-Type: application/json
+```
 
+请求体：
+
+```json
 {
   "url": "https://example.com",
   "options": {
@@ -197,55 +156,244 @@ Content-Type: application/json
 }
 ```
 
-**响应:**
+响应示例：
 
 ```json
 {
   "status": "success",
   "url": "https://example.com",
   "title": "Example Domain",
-  "content": "This domain is for use in illustrative examples in documents...",
-  "metadata": {
-    "author": "Example Author",
-    "published_date": "2023-01-01"
-  },
-  "page_count": 1
+  "content": "<!DOCTYPE html><html>...</html>"
 }
 ```
 
-##### 选项说明
+### 提取 URL 文本内容
 
-- `browser`: 浏览器类型，支持 "chrome"（默认）和 "firefox"
-- `headless`: 是否使用无头模式，默认为 true
-- `handle_pagination`: 是否处理分页内容，默认为 true
+```
+POST /api/extract-text
+```
 
-##### 错误响应
-
-当发生错误时，API会返回相应的错误信息：
+请求体：
 
 ```json
 {
-  "status": "error",
-  "message": "错误描述信息"
+  "url": "https://example.com",
+  "selector": "body",
+  "options": {
+    "browser": "chrome",
+    "headless": true
+  }
 }
 ```
 
-常见的错误状态码：
-- 400: 请求参数错误
-- 404: 未找到页面内容
-- 500: 服务器内部错误
+响应示例：
 
-## 安装依赖
-
-```bash
-pip install -r requirements.txt
+```json
+{
+  "status": "success",
+  "url": "https://example.com",
+  "title": "Example Domain",
+  "text_content": "Example Domain\nThis domain is for use in illustrative examples in documents..."
+}
 ```
 
-## 配置
+### 批量提取多个 URL 内容
 
-可以通过修改 `src/config.py` 文件来调整系统配置。
->>>>>>> c7daa95fd44f9c4fad6aed7819ffc62e3fb669e4
+```
+POST /api/batch
+```
+
+请求体：
+
+```json
+{
+  "urls": [
+    "https://example.com",
+    "https://example.org"
+  ],
+  "options": {
+    "browser": "chrome",
+    "headless": true,
+    "handle_pagination": true
+  }
+}
+```
+
+响应示例：
+
+```json
+{
+  "status": "success",
+  "count": 2,
+  "results": [
+    {
+      "url": "https://example.com",
+      "title": "Example Domain",
+      "content": "<!DOCTYPE html><html>...</html>"
+    },
+    {
+      "url": "https://example.org",
+      "title": "Example Domain",
+      "content": "<!DOCTYPE html><html>...</html>"
+    }
+  ]
+}
+```
+
+## 环境变量配置
+
+可以通过环境变量配置系统的默认行为：
+
+| 环境变量 | 描述 | 默认值 |
+|----------|------|--------|
+| SELENIUM_BROWSER | 默认浏览器类型 | chrome |
+| SELENIUM_HEADLESS | 是否使用无头模式 | true |
+| PAGE_LOAD_TIMEOUT | 页面加载超时时间（秒） | 30 |
+| PAGE_WAIT_TIMEOUT | 页面等待超时时间（秒） | 10 |
+| ELEMENT_WAIT_TIMEOUT | 元素等待超时时间（秒） | 10 |
+| API_HOST | API 服务器主机地址 | 0.0.0.0 |
+| API_PORT | API 服务器端口 | 5000 |
+| API_DEBUG | 是否启用 API 调试模式 | false |
+| MAX_RETRIES | 最大重试次数 | 3 |
+| RETRY_DELAY | 重试延迟时间（秒） | 2 |
+| USER_AGENT | 自定义用户代理 | Mozilla/5.0... |
+
+## 高级使用
+
+### 处理动态加载内容
+
+```python
+from src.crawler import WebCrawler
+
+with WebCrawler() as crawler:
+    crawler.setup(wait_for_dynamic_content=True)
+    results = crawler.crawl_urls(["https://example.com"])
+```
+
+### 自定义内容提取
+
+```python
+from src.crawler import WebCrawler
+
+with WebCrawler() as crawler:
+    crawler.setup()
+    crawler.add_custom_extractor(
+        name="product_price",
+        selector=".price",
+        attribute="data-value"
+    )
+    results = crawler.crawl_urls(["https://example.com/product"])
+```
+
+### 处理登录认证
+
+```python
+from src.crawler import WebCrawler
+
+with WebCrawler() as crawler:
+    crawler.setup()
+    crawler.login(
+        url="https://example.com/login",
+        username="user",
+        password="pass",
+        username_selector="#username",
+        password_selector="#password",
+        submit_selector="button[type='submit']"
+    )
+    results = crawler.crawl_urls(["https://example.com/protected-page"])
+```
+
+## 开发指南
+
+### 运行测试
+
+```bash
+# 运行所有测试
+python -m pytest tests/
+
+# 运行特定测试文件
+python -m pytest tests/test_crawler.py
+
+# 运行带覆盖率报告的测试
+python -m pytest tests/ --cov=src
+```
+
+### 代码风格检查
+
+```bash
+# 运行 flake8
+flake8 src/ tests/
+
+# 运行 black 格式化
+black src/ tests/
+```
+
+## 故障排除
+
+### 常见问题
+
+1. WebDriver 未找到
+   - 确保已下载正确版本的 WebDriver
+   - 确保 WebDriver 已添加到系统 PATH 中
+   - 检查环境变量 CHROME_DRIVER_PATH 或 FIREFOX_DRIVER_PATH
+
+2. 页面加载超时
+   - 增加 PAGE_LOAD_TIMEOUT 值
+   - 检查网络连接
+   - 确认目标网站可访问
+
+3. 元素未找到
+   - 检查选择器是否正确
+   - 增加 ELEMENT_WAIT_TIMEOUT 值
+   - 确认元素是否在页面中动态加载
+
+### 调试技巧
+
+1. 启用详细日志：
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG)
+```
+
+2. 使用非无头模式调试：
+```bash
+python src/main.py cli https://example.com --no-headless
+```
+
+3. 保存页面快照：
+```python
+crawler.save_screenshot("debug.png")
+```
+
+## 贡献指南
+
+1. Fork 项目
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 创建 Pull Request
+
+## 更新日志
+
+### [1.0.0] - 2024-01-01
+- 初始版本发布
+- 支持命令行和 API 模式
+- 实现基本的网页内容提取功能
+
+### [0.1.0] - 2023-12-01
+- 项目初始化
+- 基础功能实现
 
 ## 许可证
 
-MIT
+本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+
+## 作者
+
+* **Your Name** - *Initial work* - [YourGithub](https://github.com/yourusername)
+
+## 致谢
+
+* Selenium 项目
+* Python 社区
+* 所有贡献者

@@ -6,8 +6,67 @@
 
 import sys
 import argparse
-from main import WebCrawler
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from driver_manager import get_driver
 from api_server import start_api_server
+
+class WebCrawler:
+    """网页内容爬取类"""
+    
+    def __init__(self):
+        """初始化爬虫"""
+        self.driver = None
+        self.browser_type = None
+        self.headless = True
+    
+    def setup(self, browser_type="chrome", headless=True):
+        """设置爬虫参数"""
+        self.browser_type = browser_type
+        self.headless = headless
+        
+        # 获取WebDriver实例
+        self.driver = get_driver(
+            browser_type=browser_type,
+            headless=headless
+        )
+    
+    def crawl_urls(self, urls, handle_pagination=True):
+        """爬取指定URL列表"""
+        results = []
+        
+        for url in urls:
+            try:
+                # 访问页面
+                self.driver.get(url)
+                
+                # 获取页面内容
+                content = self.driver.page_source
+                
+                # 解析内容
+                result = {
+                    'url': url,
+                    'title': self.driver.title,
+                    'content': content
+                }
+                
+                results.append(result)
+                
+                print(f"成功爬取: {url}")
+                print(f"页面标题: {result['title']}")
+                
+            except Exception as e:
+                print(f"爬取 {url} 失败: {str(e)}")
+        
+        return results
+    
+    def cleanup(self):
+        """清理资源"""
+        if self.driver:
+            self.driver.quit()
 
 def parse_args() -> argparse.Namespace:
     """解析命令行参数"""
