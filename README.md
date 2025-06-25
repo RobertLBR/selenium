@@ -246,6 +246,8 @@ POST /api/batch
 
 | 环境变量 | 描述 | 默认值 |
 |----------|------|--------|
+| USE_REMOTE_WEBDRIVER | 是否使用远程WebDriver | true |
+| REMOTE_WEBDRIVER_URL | 远程WebDriver服务URL | http://172.16.101.252:4444/wd/hub |
 | SELENIUM_BROWSER | 默认浏览器类型 | chrome |
 | SELENIUM_HEADLESS | 是否使用无头模式 | true |
 | PAGE_LOAD_TIMEOUT | 页面加载超时时间（秒） | 30 |
@@ -259,6 +261,35 @@ POST /api/batch
 | USER_AGENT | 自定义用户代理 | Mozilla/5.0... |
 
 ## 高级使用
+
+### 使用远程 WebDriver
+
+系统默认配置为使用远程 WebDriver 服务。您可以通过环境变量修改远程 WebDriver 的配置：
+
+```bash
+# 设置是否使用远程WebDriver
+export USE_REMOTE_WEBDRIVER=true
+
+# 设置远程WebDriver服务URL
+export REMOTE_WEBDRIVER_URL="http://your-selenium-grid:4444/wd/hub"
+```
+
+在代码中指定使用远程 WebDriver：
+
+```python
+from src.crawler import WebCrawler
+
+with WebCrawler() as crawler:
+    # 系统会自动使用远程WebDriver
+    crawler.setup(browser_type="chrome", headless=True)
+    results = crawler.crawl_urls(["https://example.com"])
+```
+
+如果您想临时禁用远程 WebDriver 而使用本地 WebDriver：
+
+```bash
+export USE_REMOTE_WEBDRIVER=false
+```
 
 ### 处理动态加载内容
 

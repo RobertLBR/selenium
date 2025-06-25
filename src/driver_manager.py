@@ -17,6 +17,8 @@ from config import (
     PAGE_LOAD_TIMEOUT, 
     PAGE_WAIT_TIMEOUT,
     USER_AGENT,
+    REMOTE_WEBDRIVER_URL,
+    USE_REMOTE_WEBDRIVER,
     get_browser_options
 )
 
@@ -65,8 +67,17 @@ def get_driver(browser_type=DEFAULT_BROWSER, headless=HEADLESS_MODE):
         # 设置页面加载策略
         options.page_load_strategy = browser_options.get("page_load_strategy", "eager")
         
-        service = ChromeService()
-        driver = webdriver.Chrome(service=service, options=options)
+        if USE_REMOTE_WEBDRIVER:
+            # 使用远程WebDriver
+            logger.info(f"使用远程WebDriver: {REMOTE_WEBDRIVER_URL}")
+            driver = webdriver.Remote(
+                command_executor=REMOTE_WEBDRIVER_URL,
+                options=options
+            )
+        else:
+            # 使用本地WebDriver
+            service = ChromeService()
+            driver = webdriver.Chrome(service=service, options=options)
         
     elif browser_type.lower() == "firefox":
         options = FirefoxOptions()
@@ -83,8 +94,17 @@ def get_driver(browser_type=DEFAULT_BROWSER, headless=HEADLESS_MODE):
         # 设置页面加载策略
         options.set_preference("pageLoadStrategy", browser_options.get("page_load_strategy", "eager"))
         
-        service = FirefoxService()
-        driver = webdriver.Firefox(service=service, options=options)
+        if USE_REMOTE_WEBDRIVER:
+            # 使用远程WebDriver
+            logger.info(f"使用远程WebDriver: {REMOTE_WEBDRIVER_URL}")
+            driver = webdriver.Remote(
+                command_executor=REMOTE_WEBDRIVER_URL,
+                options=options
+            )
+        else:
+            # 使用本地WebDriver
+            service = FirefoxService()
+            driver = webdriver.Firefox(service=service, options=options)
         
     else:
         logger.error(f"不支持的浏览器类型: {browser_type}")

@@ -6,6 +6,10 @@
 import os
 from typing import Dict, Any
 
+# WebDriver配置
+USE_REMOTE_WEBDRIVER = os.getenv('USE_REMOTE_WEBDRIVER', 'true').lower() == 'true'
+REMOTE_WEBDRIVER_URL = os.getenv('REMOTE_WEBDRIVER_URL', 'http://172.16.101.252:4444/wd/hub')
+
 # 浏览器配置
 DEFAULT_BROWSER = os.getenv('SELENIUM_BROWSER', 'chrome')
 HEADLESS_MODE = os.getenv('SELENIUM_HEADLESS', 'true').lower() == 'true'
