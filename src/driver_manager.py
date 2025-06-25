@@ -42,7 +42,7 @@ def get_driver(browser_type=DEFAULT_BROWSER, headless=HEADLESS_MODE):
     logger.info(f"初始化WebDriver: {browser_type} {'headless' if headless else 'normal'} mode")
     
     # 获取浏览器选项配置
-    browser_options = get_browser_options(browser_type, headless)
+    browser_options = get_browser_options(browser_type)
     
     if browser_type.lower() == "chrome":
         options = ChromeOptions()

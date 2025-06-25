@@ -23,6 +23,15 @@ class WebCrawler:
         self.browser_type = None
         self.headless = True
     
+    def __enter__(self):
+        """上下文管理器入口方法"""
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """上下文管理器退出方法"""
+        self.cleanup()
+        return False  # 不抑制异常
+    
     def setup(self, browser_type="chrome", headless=True):
         """设置爬虫参数"""
         self.browser_type = browser_type

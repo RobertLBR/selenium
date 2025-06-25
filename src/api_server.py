@@ -29,11 +29,14 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 CORS(app)  # 启用CORS支持
 
-# 导入WebCrawler类
-from crawler import WebCrawler
-
 # 全局爬虫实例池
 crawler_pool = {}
+
+# 使用延迟导入避免循环依赖
+def get_crawler_class():
+    """获取WebCrawler类，使用延迟导入避免循环依赖"""
+    from crawler import WebCrawler
+    return WebCrawler
 
 @app.route("/", methods=["GET"])
 def index() -> Response:
@@ -119,6 +122,7 @@ def extract_content() -> Response:
         handle_pagination = options.get("handle_pagination", True)
         
         # 创建爬虫实例
+        WebCrawler = get_crawler_class()
         crawler = WebCrawler()
         
         # 设置爬虫
