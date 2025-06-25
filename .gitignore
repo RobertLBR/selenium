@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 venv
 .idea
 output
 src/output
 src/__pycache__
 src/logs
+=======
+.idea
+output
+logs
+src/output
+src/__pycache__
+src/logs
+
+>>>>>>> c7daa95fd44f9c4fad6aed7819ffc62e3fb669e4
