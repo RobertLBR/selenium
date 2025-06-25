@@ -1,16 +1,56 @@
-<<<<<<< HEAD
-venv
-.idea
-output
-src/output
-src/__pycache__
-src/logs
-=======
-.idea
-output
-logs
-src/output
-src/__pycache__
-src/logs
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
->>>>>>> c7daa95fd44f9c4fad6aed7819ffc62e3fb669e4
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

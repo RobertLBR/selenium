@@ -1,17 +1,34 @@
-import requests
+import unittest
+from crawler import WebCrawler
+from src.plugins.input.ajax_plugin import AjaxPlugin
+from src.plugins.parse.news_parser import NewsParser
 
-url = "http://172.16.100.56:5000/crawl"
+class TestWebCrawler(unittest.TestCase):
+    def setUp(self):
+        self.crawler = WebCrawler()
 
-headers = { "Content-Type: application/json" }
+    def test_ajax_plugin(self):
+        """测试AJAX插件"""
+        plugin = AjaxPlugin()
+        self.assertTrue(plugin.can_handle("https://example.com/ajax/data"))
+        self.assertFalse(plugin.can_handle("https://example.com/regular/page"))
+        
+        request = plugin.process_request({})
+        self.assertIn("headers", request)
+        self.assertEqual(request["headers"]["X-Requested-With"], "XMLHttpRequest")
 
-data = {
-    "url": "https://news.baidu.com",
-    "wait_time": 30
-}
+    def test_news_parser(self):
+        """测试新闻解析插件"""
+        plugin = NewsParser()
+        self.assertTrue(plugin.can_handle("https://example.com/news/article"))
+        self.assertFalse(plugin.can_handle("https://example.com/products/item"))
 
-response = requests.post(url, headers=headers, json=data)
-print(response.text)
+class TestCrawlerIntegration(unittest.TestCase):
+    def test_crawler_initialization(self):
+        """测试爬虫初始化"""
+        crawler = WebCrawler()
+        self.assertGreater(len(crawler.input_plugins), 0)
+        self.assertGreater(len(crawler.parse_plugins), 0)
 
-# curl -X POST http://172.16.100.56:5000/crawl \
-#   -H "Content-Type: application/json" \
-#   -d '{"url":"https://news.baidu.com", "wait_time":30}'
+if __name__ == '__main__':
+    unittest.main()
