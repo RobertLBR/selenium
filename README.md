@@ -271,7 +271,7 @@ POST /api/batch
 export USE_REMOTE_WEBDRIVER=true
 
 # 设置远程WebDriver服务URL
-export REMOTE_WEBDRIVER_URL="http://your-selenium-grid:4444/wd/hub"
+export REMOTE_WEBDRIVER_URL="http://your-selenium-grid:port/wd/hub"
 ```
 
 在代码中指定使用远程 WebDriver：
