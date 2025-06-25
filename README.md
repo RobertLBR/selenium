@@ -78,25 +78,25 @@ pip install -r requirements.txt
 爬取单个 URL：
 
 ```bash
-python src/main.py cli https://example.com
+python src/main.py crawl https://example.com
 ```
 
 指定浏览器类型：
 
 ```bash
-python src/main.py cli https://example.com --browser firefox
+python src/main.py crawl https://example.com --browser firefox
 ```
 
 使用有界面模式（非无头模式）：
 
 ```bash
-python src/main.py cli https://example.com --no-headless
+python src/main.py crawl https://example.com --no-headless
 ```
 
 将结果保存到文件：
 
 ```bash
-python src/main.py cli https://example.com --output result.txt
+python src/main.py crawl https://example.com --output result.txt
 ```
 
 ### API 服务器模式
