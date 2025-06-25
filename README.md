@@ -150,8 +150,8 @@ POST /api/extract
   "url": "https://example.com",
   "options": {
     "browser": "chrome",
-    "headless": true,
-    "handle_pagination": true
+    "headless": True,
+    "handle_pagination": True
   }
 }
 ```
@@ -181,7 +181,7 @@ POST /api/extract-text
   "selector": "body",
   "options": {
     "browser": "chrome",
-    "headless": true
+    "headless": True
   }
 }
 ```
@@ -213,8 +213,8 @@ POST /api/batch
   ],
   "options": {
     "browser": "chrome",
-    "headless": true,
-    "handle_pagination": true
+    "headless": True,
+    "handle_pagination": True
   }
 }
 ```

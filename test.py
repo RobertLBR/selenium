@@ -1,34 +1,15 @@
-import unittest
-from crawler import WebCrawler
-from src.plugins.input.ajax_plugin import AjaxPlugin
-from src.plugins.parse.news_parser import NewsParser
+import requests
 
-class TestWebCrawler(unittest.TestCase):
-    def setUp(self):
-        self.crawler = WebCrawler()
+url = "http://172.16.101.252:5000/api/extract"
 
-    def test_ajax_plugin(self):
-        """测试AJAX插件"""
-        plugin = AjaxPlugin()
-        self.assertTrue(plugin.can_handle("https://example.com/ajax/data"))
-        self.assertFalse(plugin.can_handle("https://example.com/regular/page"))
-        
-        request = plugin.process_request({})
-        self.assertIn("headers", request)
-        self.assertEqual(request["headers"]["X-Requested-With"], "XMLHttpRequest")
+data = {
+    "url": "https://news.cctv.com/2025/06/25/ARTIAEIpANSZQSsRXtCHUrgR250625.shtml?spm=C94212.P4YnMod9m2uD.ENPMkWvfnaiV.14",
+    "options": {
+        "browser": "chrome",
+        "headless": True,
+        "handle_pagination": True
+    }
+}
 
-    def test_news_parser(self):
-        """测试新闻解析插件"""
-        plugin = NewsParser()
-        self.assertTrue(plugin.can_handle("https://example.com/news/article"))
-        self.assertFalse(plugin.can_handle("https://example.com/products/item"))
-
-class TestCrawlerIntegration(unittest.TestCase):
-    def test_crawler_initialization(self):
-        """测试爬虫初始化"""
-        crawler = WebCrawler()
-        self.assertGreater(len(crawler.input_plugins), 0)
-        self.assertGreater(len(crawler.parse_plugins), 0)
-
-if __name__ == '__main__':
-    unittest.main()
+response = requests.post(url, json=data)
+print(response.content.decode("utf-8"))
